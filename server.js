@@ -12,12 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // app.use(require("./public/api.js"));
 
 
 
 app.listen(PORT, () => {
-    console.log(`Helm to 108! App is running on PORT ${PORT}!`);
+    console.log(`Helm to 108! Server is running on: http://localhost:${PORT}/ \n`);
 });
