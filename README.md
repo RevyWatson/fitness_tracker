@@ -11,7 +11,7 @@ This application is a workout tracker. The front end code was provided. My task 
   - [Questions](#questions)
 
 ## Deployed Application
-[Fitness Tracker]()
+[Fitness Tracker](https://whispering-plains-59115.herokuapp.com/)
 
 ![Screenshot (100)](https://user-images.githubusercontent.com/76264693/119704473-b1bdb780-be25-11eb-815a-72e0fbc39834.png)
 
