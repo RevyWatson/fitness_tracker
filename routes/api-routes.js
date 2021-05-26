@@ -3,14 +3,12 @@ const db = require("../models/Workout");
 
 //route to get workouts
 router.get("/api/workouts", (req, res) => {
-    console.log("reached route!");
     db.find({})
         .then(dbWorkout => {
             console.log(dbWorkout);
             res.json(dbWorkout);
         })
         .catch(err => {
-            console.log("Reached error!");
             res.status(400).json(err);
         });
 });
@@ -54,7 +52,6 @@ router.get("/api/workouts/range", (req, res) => {
             res.json(dbWorkout);
         })
         .catch(err => {
-            console.log("Reached error!");
             res.status(400).json(err);
         });
 });
